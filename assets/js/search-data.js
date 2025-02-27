@@ -389,17 +389,7 @@ ninja.data = [{
           section: "News",},{id: "news-unist-촉각-인터랙션-연구실-시작-birthday",
           title: 'UNIST 촉각 인터랙션 연구실 시작 :birthday:',
           description: "",
-          section: "News",},{id: "news-chi-39-25-paper-acceptance",
-          title: 'CHI&amp;#39;25 Paper Acceptance',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/20250117-CHI-2025/";
-            },},{id: "news-홈페이지-공사중",
-          title: '홈페이지 공사중',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/20250227-Update/";
-            },},{id: "projects-project-1",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
