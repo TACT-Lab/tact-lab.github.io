@@ -198,7 +198,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    // font-family: monospace;
 
     p {
       display: inline-block;
@@ -215,9 +215,53 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 자동 조정 */
+    gap: 10px; /* 각 프로필 간격 */
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+    padding: 15px;
+    /* border: 1px solid #ddd;
+    border-radius: 10px; */
+    /* background: #f9f9f9; */
+}
+
+.profile img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.email-icon {
+  width: 30px !important;
+  height: 30px !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+@media (max-width: 768px) {
+    .profiles-grid {
+      grid-template-columns: repeat(2, 1fr); /* 화면이 작으면 2열 */
+    }
+}
+  
+@media (max-width: 560px) {
+    .profiles-grid {
+      grid-template-columns: repeat(1, 1fr); /* 더 작으면 1열 */
+    }
+}
+
+
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    // width: 30%;
 
     .address {
       p {
