@@ -1,0 +1,76 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% if page.profiles_professor %}
+      <hr>
+      <h2 class="post-title">Prototyping tools</h2>
+      <div class="profiles-grid">
+        {% for profile in page.profiles_professor %}
+          <div class="profile">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/facility/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% endif %}
+            {% if profile.more_info %}
+              <div class="more-info">{{ profile.more_info }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.profiles_student %}
+      <hr>
+      <h2 class="post-title">AR/VR</h2>
+      <div class="profiles-grid">
+        {% for profile in page.profiles_student %}
+          <div class="profile">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/facility/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% endif %}
+            {% if profile.more_info %}
+              <div class="more-info">{{ profile.more_info }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.profiles_allumni %}
+      <hr>
+      <h2 class="post-title">Electronics</h2>
+      <div class="profiles-grid">
+        {% for profile in page.profiles_allumni %}
+          <div class="profile">
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/facility/' %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% endif %}
+            {% if profile.more_info %}
+              <div class="more-info">{{ profile.more_info }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+</div>
