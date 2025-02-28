@@ -5,12 +5,12 @@ layout: page
   <article>
     {% if page.profiles_professor %}
       <hr>
-      <h2 class="post-title">Faculty</h2>
+      <h2 class="post-title">Prototyping tools</h2>
       <div class="profiles-grid">
         {% for profile in page.profiles_professor %}
           <div class="profile">
             {% if profile.image %}
-              {% assign profile_image_path = profile.image | prepend: 'assets/img/profile/' %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/facility/' %}
               {% if profile.image_circular %}
                 {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
               {% else %}
@@ -21,16 +21,6 @@ layout: page
             {% endif %}
             {% if profile.more_info %}
               <div class="more-info">{{ profile.more_info }}</div>
-            {% endif %}
-            {% if profile.email %}
-              <a href= {{profile.email | prepend: 'mailto:'}}>
-                <img src="/assets/img/email_icon.png" class="email-icon">
-              </a>
-            {% endif %}
-            {% if profile.website %}
-              <a href= {{profile.website}}>
-                <img src="/assets/img/home_icon.png" class="email-icon">
-              </a>
             {% endif %}
           </div>
         {% endfor %}
@@ -38,12 +28,12 @@ layout: page
     {% endif %}
     {% if page.profiles_student %}
       <hr>
-      <h2 class="post-title">Members</h2>
+      <h2 class="post-title">AR/VR</h2>
       <div class="profiles-grid">
         {% for profile in page.profiles_student %}
           <div class="profile">
             {% if profile.image %}
-              {% assign profile_image_path = profile.image | prepend: 'assets/img/profile/' %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/facility/' %}
               {% if profile.image_circular %}
                 {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
               {% else %}
@@ -54,16 +44,6 @@ layout: page
             {% endif %}
             {% if profile.more_info %}
               <div class="more-info">{{ profile.more_info }}</div>
-            {% endif %}
-            {% if profile.email %}
-              <a href= {{profile.email | prepend: 'mailto:'}}>
-                <img src="/assets/img/email_icon.png" class="email-icon">
-              </a>
-            {% endif %}
-            {% if profile.website %}
-              <a href= {{profile.website}}>
-                <img src="/assets/img/home_icon.png" class="email-icon">
-              </a>
             {% endif %}
           </div>
         {% endfor %}
@@ -71,12 +51,12 @@ layout: page
     {% endif %}
     {% if page.profiles_allumni %}
       <hr>
-      <h2 class="post-title">Allumni</h2>
+      <h2 class="post-title">Electronics</h2>
       <div class="profiles-grid">
         {% for profile in page.profiles_allumni %}
           <div class="profile">
             {% if profile.image %}
-              {% assign profile_image_path = profile.image | prepend: 'assets/img/profile/' %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/facility/' %}
               {% if profile.image_circular %}
                 {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
               {% else %}
@@ -87,16 +67,6 @@ layout: page
             {% endif %}
             {% if profile.more_info %}
               <div class="more-info">{{ profile.more_info }}</div>
-            {% endif %}
-            {% if profile.email %}
-              <a href= {{profile.email | prepend: 'mailto:'}}>
-                <img src="/assets/img/email_icon.png" class="email-icon">
-              </a>
-            {% endif %}
-            {% if profile.website %}
-              <a href= {{profile.website}}>
-                <img src="/assets/img/home_icon.png" class="email-icon">
-              </a>
             {% endif %}
           </div>
         {% endfor %}
