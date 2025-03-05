@@ -69,11 +69,11 @@ layout: page
         {% endfor %}
       </div>
     {% endif %}
-    {% if page.profiles_allumni %}
+    {% if page.profiles_alumni %}
       <hr>
-      <h2 class="post-title">Allumni</h2>
+      <h2 class="post-title">Alumni</h2>
       <div class="profiles-grid">
-        {% for profile in page.profiles_allumni %}
+        {% for profile in page.profiles_alumni %}
           <div class="profile">
             {% if profile.image %}
               {% assign profile_image_path = profile.image | prepend: 'assets/img/profile/' %}

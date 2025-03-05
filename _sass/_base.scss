@@ -234,8 +234,11 @@ ul.task-list input[type="checkbox"] {
 
 .profile img {
   width: 100%;
+  aspect-ratio: 1/1;
   max-width: 480px;
-  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: top;
   border-radius: 50%;
 }
 
