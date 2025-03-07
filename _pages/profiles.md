@@ -40,8 +40,22 @@ profiles_student:
     image_circular: true # crops the image to make it circular
     more_info: >
       <p style="font-size: 1.5rem;"><strong>Junsu Lee</strong></p><br>
-      <p>Undergraduate Student</p>
+      <p>Undergraduate Intern</p>
     email: linak31413@unist.ac.kr
+  - #image: LJS.jpg
+    # content: about_einstein.md
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p style="font-size: 1.5rem;"><strong>Jiho Park</strong></p><br>
+      <p>Undergraduate Intern</p>
+    email: batiger00@unist.ac.kr
+  - #image: LJS.jpg
+    # content: about_einstein.md
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p style="font-size: 1.5rem;"><strong>YoungWoong Jang</strong></p><br>
+      <p>Undergraduate Intern</p>
+    email: seewhy@unist.ac.kr
 
 profiles_alumni:
   # if you want to include more than one profile, just replicate the following block
