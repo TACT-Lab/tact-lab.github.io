@@ -4,7 +4,7 @@ permalink: /facility/
 title: facility
 description: facility in the lab
 nav: true
-nav_order: 4
+nav_order: 7
 
 profiles_professor:
   # if you want to include more than one profile, just replicate the following block
