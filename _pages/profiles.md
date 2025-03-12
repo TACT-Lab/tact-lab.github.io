@@ -16,7 +16,7 @@ profiles_professor:
       <p style="font-size: 1.5rem;"><strong>Jaeyeon Lee</strong></p><br>
       <p>Assistant Professor</p>
     email: jaeyeonlee@unist.ac.kr
-    website: https://jaeyeonlee.com/JaeyeonLee_CV.pdf
+    website: /people/jaeyeonlee
 
 profiles_student:
   # if you want to include more than one profile, just replicate the following block
