@@ -9,26 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
+  },{id: "nav-opportunity",
+          title: "opportunity",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-facility",
-          title: "facility",
-          description: "facility in the lab",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/facility/";
+            window.location.href = "/opportunity/";
           },
         },{id: "nav-people",
           title: "people",
@@ -36,6 +22,20 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-facility",
+          title: "facility",
+          description: "facility in the lab",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/facility/";
           },
         },{id: "post-a-post-with-image-galleries",
       
