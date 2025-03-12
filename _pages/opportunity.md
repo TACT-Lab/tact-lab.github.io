@@ -3,8 +3,8 @@ layout: page
 permalink: /opportunity/
 title: opportunity
 
-nav: true
-nav_order: 1
+nav: false
+
 ---
 
 <strong>Thank you for your interest in TACT lab!</strong>
