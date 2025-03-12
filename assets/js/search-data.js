@@ -453,7 +453,7 @@ ninja.data = [{
         title: 'Bluesky',
         section: 'Socials',
         handler: () => {
-          window.open("jaeyeon.bsky.social", "_blank");
+          window.open("http://jaeyeon.bsky.social", "_blank");
         },
       },{
         id: 'social-email',
@@ -468,6 +468,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://orcid.org/https://orcid.org/0000-0002-6474-8080", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=K_xmrzgAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
