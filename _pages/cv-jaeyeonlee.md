@@ -1,5 +1,5 @@
 ---
-layout: cv
+layout: cv-jaeyeonlee
 permalink: /people/jaeyeonlee
 title: Jaeyeon Lee
 nav: false
